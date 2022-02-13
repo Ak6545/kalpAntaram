@@ -206,14 +206,13 @@
           <div id="fastSearch">
               <input id="searchInput" placeholder="शीर्षिकान्विष्यताम्"  tabindex="0">
           </div>
-          <div id="sidebarTitle" class="card-title bg-light-gray border d-flex justify-content-between" >
-          <a name="sidebarToggleLink" data-toggle="collapse" href="#sidebar_body" role="button" aria-expanded="true" aria-controls="sidebar_body" onclick="module_main.default.sidebarToggleHandler()">
-            Menu <i class="fas fa-caret-down"></i></a>
-        </div>
-        <nav class="card-body p-0 collapse show" id="sidebar_body">
-          <ul id="displayed_sidebar" class="list pl2 p-2 bg-yellow">
-        </ul>
-        </nav>
+          <details open  class="bg-light-gray" >
+              <summary id="sidebarToggleLink" onclick="module_main.default.sidebarToggleHandler()">
+            Menu
+              </summary>
+              <ul id="sidebarBody" class="list pl2 p-0 bg-yellow">
+              </ul>
+          </details>
       </aside>
       <main class="col p-3" role="main">
         
@@ -225,15 +224,14 @@
 </header>
 <article>
   <aside id="toc_card" class="card border noPrint ">
-    <div id="toc_header" class="card-title border d-flex justify-content-between">
-        <a data-toggle="collapse" href="#toc_body" role="button" aria-expanded="true" aria-controls="toc_body">
-          What's in this page? <i class="fas fa-caret-down"></i> </a>
-    </div>
-    <div id="toc_body" class="card-body collapse p-0">
-      
-      <ul id="toc_ul" class="list p-0">
-      </ul>
-    </div>
+    <details id="toc_header">
+        <summary>What's in this page?</summary>
+      <div id="toc_body" class="p-0">
+        
+        <ul id="toc_ul" class="list p-0">
+        </ul>
+      </div>
+    </details>
   </aside>
   <div id="post_content">
   <p><em>Śrī Rāmanavamī</em> is the most important festival which comes in the month of <em>Caitra</em>, just after <em>Ugādi</em>. It is one of the great festivals which is being celebrated right from <em>Rāmasetu</em> to <em>Himālayas</em> by people belonging to all <em>varṇas</em> and <em>āśrmas</em> and who follow the <em>Āryasamskṛti</em>. On this day, the tradition is to get absorbed in <em>Rāma</em> by various observances such as doing of <em>Pārāyaṇa</em> of <em>Rāmāyaṇa</em> in Sanskrit and regional languages, listening to the story of <em>Rāma</em>, presenting the story in dance, music and musical instruments, worshipping of <em>Rāma</em> in homes, <em>maṭhas</em> and temples with many <em>pūjās</em> and <em>upacāras</em>, observing a fast which fecilitates to meditate upon HIM and/or taking the <em>Prasāda</em> (<em>Naivedya</em>) after the <em>pūja</em>, to obtain his grace.</p>
@@ -794,7 +792,7 @@
     <a class="btn btn-secondary" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a>
     <div class="btn small border">
       
-      <a href="https://github.com/vishvAsa/kalpAntaram/actions/workflows/build.yml"><img src="https://github.com/vishvAsa/kalpAntaram/actions/workflows/build.yml/badge.svg"> Built </a> on 2022 Feb 10 00:27:09 UTC. (<a href="http://google.com/search?q=00%3a27%3a09%20UTC to IST">IST</a>)
+      <a href="https://github.com/vishvAsa/kalpAntaram/actions/workflows/build.yml"><img src="https://github.com/vishvAsa/kalpAntaram/actions/workflows/build.yml/badge.svg"> Built </a> on 2022 Feb 13 17:35:24 UTC. (<a href="http://google.com/search?q=17%3a35%3a24%20UTC to IST">IST</a>)
     </div>
   <ul id="footer-bar-right-custom" class="list-group list-group-horizontal">
   </ul>

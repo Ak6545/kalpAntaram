@@ -206,14 +206,13 @@
           <div id="fastSearch">
               <input id="searchInput" placeholder="शीर्षिकान्विष्यताम्"  tabindex="0">
           </div>
-          <div id="sidebarTitle" class="card-title bg-light-gray border d-flex justify-content-between" >
-          <a name="sidebarToggleLink" data-toggle="collapse" href="#sidebar_body" role="button" aria-expanded="true" aria-controls="sidebar_body" onclick="module_main.default.sidebarToggleHandler()">
-            Menu <i class="fas fa-caret-down"></i></a>
-        </div>
-        <nav class="card-body p-0 collapse show" id="sidebar_body">
-          <ul id="displayed_sidebar" class="list pl2 p-2 bg-yellow">
-        </ul>
-        </nav>
+          <details open  class="bg-light-gray" >
+              <summary id="sidebarToggleLink" onclick="module_main.default.sidebarToggleHandler()">
+            Menu
+              </summary>
+              <ul id="sidebarBody" class="list pl2 p-0 bg-yellow">
+              </ul>
+          </details>
       </aside>
       <main class="col p-3" role="main">
         
@@ -225,15 +224,14 @@
 </header>
 <article>
   <aside id="toc_card" class="card border noPrint ">
-    <div id="toc_header" class="card-title border d-flex justify-content-between">
-        <a data-toggle="collapse" href="#toc_body" role="button" aria-expanded="true" aria-controls="toc_body">
-          What's in this page? <i class="fas fa-caret-down"></i> </a>
-    </div>
-    <div id="toc_body" class="card-body collapse p-0">
-      
-      <ul id="toc_ul" class="list p-0">
-      </ul>
-    </div>
+    <details id="toc_header">
+        <summary>What's in this page?</summary>
+      <div id="toc_body" class="p-0">
+        
+        <ul id="toc_ul" class="list p-0">
+        </ul>
+      </div>
+    </details>
   </aside>
   <div id="post_content">
   <p>This has been printed several times (there is Dr. Stenzler&rsquo;s edition of 1876, the Calcutta edition of 1876, the Ānanadāśrama edition with the commentary of Haradatta, and the Mysore Government edition with the bhāṣya of Maskarin; it was translated by Bühler in S. B. E., Vol. II. with an introduction). The Anandāśrama edition of 1910 which is incorrect in a few places (e. g. 21.7) has been used in this work. This dharmasūtra is, as we shall see, the oldest of those we have. The Gautama dharmasūtra was specially studied by followers of the Sāmaveda (see note 55 above). The commentary on the Caraṇavyūha tells us that Gautama was one of the nine sub-divisions of the Rāṇāyanīya school of the Sāmaveda. A teacher Gautama is mentioned frequently in the Lāṭyāyanaśrautasūtra (e.g. I. 3. 3 and I. 4. 17) and in the Drāhyāyanaśrauta (e.g. I. 4. 17, IX. 3. 15) of the Sāmaveda. The Gobhilagṛhya (III. 10. 6) which belongs to the Sāmaveda cites Gautama as an authority. Therefore it is not improbable that a complete Gautamasūtra embodying Śrauta, Gṛhya and Dharma doctrines once existed. There are other indications pointing to the close connection of the Gautamadharmasūtra with the Sāmaveda. Chapter 26 of the dharmasūtra about <em>Kṛcchra</em> penance is the same, almost word for word, as the Sāmavidhāna<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> Brāhmaṇa (I. 2, Burnell&rsquo;s ed.).</p>
@@ -451,7 +449,7 @@
     <a class="btn btn-secondary" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a>
     <div class="btn small border">
       
-      <a href="https://github.com/vishvAsa/kalpAntaram/actions/workflows/build.yml"><img src="https://github.com/vishvAsa/kalpAntaram/actions/workflows/build.yml/badge.svg"> Built </a> on 2022 Feb 10 00:27:09 UTC. (<a href="http://google.com/search?q=00%3a27%3a09%20UTC to IST">IST</a>)
+      <a href="https://github.com/vishvAsa/kalpAntaram/actions/workflows/build.yml"><img src="https://github.com/vishvAsa/kalpAntaram/actions/workflows/build.yml/badge.svg"> Built </a> on 2022 Feb 13 17:35:24 UTC. (<a href="http://google.com/search?q=17%3a35%3a24%20UTC to IST">IST</a>)
     </div>
   <ul id="footer-bar-right-custom" class="list-group list-group-horizontal">
   </ul>

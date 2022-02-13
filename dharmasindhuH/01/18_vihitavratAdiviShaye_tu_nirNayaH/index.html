@@ -206,14 +206,13 @@
           <div id="fastSearch">
               <input id="searchInput" placeholder="शीर्षिकान्विष्यताम्"  tabindex="0">
           </div>
-          <div id="sidebarTitle" class="card-title bg-light-gray border d-flex justify-content-between" >
-          <a name="sidebarToggleLink" data-toggle="collapse" href="#sidebar_body" role="button" aria-expanded="true" aria-controls="sidebar_body" onclick="module_main.default.sidebarToggleHandler()">
-            Menu <i class="fas fa-caret-down"></i></a>
-        </div>
-        <nav class="card-body p-0 collapse show" id="sidebar_body">
-          <ul id="displayed_sidebar" class="list pl2 p-2 bg-yellow">
-        </ul>
-        </nav>
+          <details open  class="bg-light-gray" >
+              <summary id="sidebarToggleLink" onclick="module_main.default.sidebarToggleHandler()">
+            Menu
+              </summary>
+              <ul id="sidebarBody" class="list pl2 p-0 bg-yellow">
+              </ul>
+          </details>
       </aside>
       <main class="col p-3" role="main">
         
@@ -225,15 +224,14 @@
 </header>
 <article>
   <aside id="toc_card" class="card border noPrint ">
-    <div id="toc_header" class="card-title border d-flex justify-content-between">
-        <a data-toggle="collapse" href="#toc_body" role="button" aria-expanded="true" aria-controls="toc_body">
-          What's in this page? <i class="fas fa-caret-down"></i> </a>
-    </div>
-    <div id="toc_body" class="card-body collapse p-0">
-      
-      <ul id="toc_ul" class="list p-0">
-      </ul>
-    </div>
+    <details id="toc_header">
+        <summary>What's in this page?</summary>
+      <div id="toc_body" class="p-0">
+        
+        <ul id="toc_ul" class="list p-0">
+        </ul>
+      </div>
+    </details>
   </aside>
   <div id="post_content">
   <p>तत्र कर्मणो यस्य यः कालस्तत्कालव्यापिनी तिथिर्ग्राह्या यथा विनायकादिव्रते मध्यान्हादौ पूजनादिविधानान्मध्यान्हदिव्यापिनी दिनद्वये कर्मकाले व्याप्तावव्याप्तौ तदेकदेशव्याप्तौ वा युग्मवाक्यादिना पूर्वविद्धायाःपरविद्धाया वा तिथेर्ग्राह्यत्वम् युग्मवाक्यं तु युग्माग्नियुगभूतानांषण्मुन्योर्वसुरन्ध्रयोः । रुद्रेणद्वादशीयुक्ताचतुर्दश्याचपूर्णिमा । प्रतिपद्यप्यमावास्यातिथ्योर्युग्मंमहाफलमिति १ युग्मंद्वितीया अग्निस्तृतीया । द्वितीया तृतीया विद्धाग्राह्या तृतीया द्वितीयाविद्धाग्राह्येत्येवंद्वितीयातृतीययोर्युग्मम् चतुर्थी पञ्चम्योर्युग्मम् षष्ठीसप्तम्योर्युगम् अष्टमीनवम्योर्युगम् एकादशीद्वादश्योर्युग्मम् चतुर्दशीपौर्णमास्योर्युगम् अमावास्याप्रतिपदोर्युग्ममित्यर्थः क्वचिच्चतुर्थी गणनाथस्यमा तृविद्धाप्रशस्यत इत्यादिविशेषवाक्यैर्ग्राह्यत्वनिर्णयःवचनवशेनग्राह्यायास्तिथेः कर्मकालेसत्वाभावे साकल्यवचनैः सत्त्वभावनीयम् तानिच यांतिथिसमनुप्राप्यउदयंयातिभास्करः ।
@@ -278,7 +276,7 @@
     <a class="btn btn-secondary" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a>
     <div class="btn small border">
       
-      <a href="https://github.com/vishvAsa/kalpAntaram/actions/workflows/build.yml"><img src="https://github.com/vishvAsa/kalpAntaram/actions/workflows/build.yml/badge.svg"> Built </a> on 2022 Feb 10 00:27:09 UTC. (<a href="http://google.com/search?q=00%3a27%3a09%20UTC to IST">IST</a>)
+      <a href="https://github.com/vishvAsa/kalpAntaram/actions/workflows/build.yml"><img src="https://github.com/vishvAsa/kalpAntaram/actions/workflows/build.yml/badge.svg"> Built </a> on 2022 Feb 13 17:35:24 UTC. (<a href="http://google.com/search?q=17%3a35%3a24%20UTC to IST">IST</a>)
     </div>
   <ul id="footer-bar-right-custom" class="list-group list-group-horizontal">
   </ul>

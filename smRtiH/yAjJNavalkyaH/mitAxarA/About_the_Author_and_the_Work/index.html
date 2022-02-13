@@ -206,14 +206,13 @@
           <div id="fastSearch">
               <input id="searchInput" placeholder="शीर्षिकान्विष्यताम्"  tabindex="0">
           </div>
-          <div id="sidebarTitle" class="card-title bg-light-gray border d-flex justify-content-between" >
-          <a name="sidebarToggleLink" data-toggle="collapse" href="#sidebar_body" role="button" aria-expanded="true" aria-controls="sidebar_body" onclick="module_main.default.sidebarToggleHandler()">
-            Menu <i class="fas fa-caret-down"></i></a>
-        </div>
-        <nav class="card-body p-0 collapse show" id="sidebar_body">
-          <ul id="displayed_sidebar" class="list pl2 p-2 bg-yellow">
-        </ul>
-        </nav>
+          <details open  class="bg-light-gray" >
+              <summary id="sidebarToggleLink" onclick="module_main.default.sidebarToggleHandler()">
+            Menu
+              </summary>
+              <ul id="sidebarBody" class="list pl2 p-0 bg-yellow">
+              </ul>
+          </details>
       </aside>
       <main class="col p-3" role="main">
         
@@ -225,15 +224,14 @@
 </header>
 <article>
   <aside id="toc_card" class="card border noPrint ">
-    <div id="toc_header" class="card-title border d-flex justify-content-between">
-        <a data-toggle="collapse" href="#toc_body" role="button" aria-expanded="true" aria-controls="toc_body">
-          What's in this page? <i class="fas fa-caret-down"></i> </a>
-    </div>
-    <div id="toc_body" class="card-body collapse p-0">
-      
-      <ul id="toc_ul" class="list p-0">
-      </ul>
-    </div>
+    <details id="toc_header">
+        <summary>What's in this page?</summary>
+      <div id="toc_body" class="p-0">
+        
+        <ul id="toc_ul" class="list p-0">
+        </ul>
+      </div>
+    </details>
   </aside>
   <div id="post_content">
   <p>The <em>Mitākṣarā</em>, or <em>The Epitome of the Law</em>, by the twelfth-century Sanskrit author Vijñāneśvara is, along with the second-century text the <em>Laws of Manu</em> (<em>Mānava-dharmaśāstra</em>), one of the two most influential works of classical Hindu law. Its subject is <em>dharma</em>, legal and religious duty, which Olivelle has described as “the most central feature of Indian civilization down the centuries, irrespective of linguistic, sectarian, or regional differences” (<em>Dharma</em>, Motilal, 2009- vii). As the premier synthesis of <em>dharma</em>, it thus represents a watershed moment not only in the history of Sanskrit legal and religious thought but also in the intellectual history of India generally. Its genius lies in the clarity and precision of its explanations and in its creative synthesis of earlier jurisprudential thought. Widely disseminated, translated or summarized into several vernacular languages, and elaborated in many subcommentaries, the <em>Mitākṣarā</em> exerted an unparalleled influence on legal thought in medieval and early modern India.</p>
@@ -279,7 +277,7 @@
     <a class="btn btn-secondary" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a>
     <div class="btn small border">
       
-      <a href="https://github.com/vishvAsa/kalpAntaram/actions/workflows/build.yml"><img src="https://github.com/vishvAsa/kalpAntaram/actions/workflows/build.yml/badge.svg"> Built </a> on 2022 Feb 10 00:27:09 UTC. (<a href="http://google.com/search?q=00%3a27%3a09%20UTC to IST">IST</a>)
+      <a href="https://github.com/vishvAsa/kalpAntaram/actions/workflows/build.yml"><img src="https://github.com/vishvAsa/kalpAntaram/actions/workflows/build.yml/badge.svg"> Built </a> on 2022 Feb 13 17:35:24 UTC. (<a href="http://google.com/search?q=17%3a35%3a24%20UTC to IST">IST</a>)
     </div>
   <ul id="footer-bar-right-custom" class="list-group list-group-horizontal">
   </ul>
